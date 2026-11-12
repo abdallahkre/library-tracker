@@ -6,11 +6,12 @@ public class Library {
 
     public void addBook(Book book) {
         books.add(book);
+        System.out.println("Book added: " + book.getTitle());
     }
 
     public void listBooks() {
         if (books.isEmpty()) {
-            System.out.println("No books found.");
+            System.out.println("The library is empty.");
             return;
         }
 
